@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.DialogPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,11 +13,11 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="600.0" style="-fx-background-color: #fff9e5; -fx-border-color: black; -fx-border-width: 1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers/MainWindowInGame">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff9e5; -fx-border-color: black; -fx-border-width: 1; -fx-min-height: 398; -fx-min-width: 600;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.MainWindowInGame">
    <children>
-      <DialogPane layoutY="-1.0" prefHeight="400.0" prefWidth="127.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <DialogPane layoutX="473.0" layoutY="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="127.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="-2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
-      <GridPane layoutX="133.0" layoutY="14.0" prefHeight="243.0" prefWidth="332.0" AnchorPane.leftAnchor="132.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="14.0">
+      <DialogPane layoutX="6.0" layoutY="6.0" prefHeight="1051.0" prefWidth="127.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="-658.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="-1.0" />
+      <DialogPane layoutX="471.0" layoutY="-5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1051.0" prefWidth="126.0" style="-fx-border-color: black;" AnchorPane.bottomAnchor="-648.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0" />
+      <GridPane layoutX="135.0" layoutY="17.0" prefHeight="378.0" prefWidth="539.0" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="136.0" AnchorPane.topAnchor="16.0">
          <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
@@ -43,12 +45,15 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text fx:id="word_1" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
+                  <Text fx:id="word_1" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="38.84613800048828" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
                   </Text>
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #5D5363; -fx-background-radius: 10;" GridPane.columnIndex="3">
                <columnConstraints>
@@ -62,12 +67,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_4" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_4" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: FFC673; -fx-background-radius: 10;" GridPane.columnIndex="2">
                <columnConstraints>
@@ -81,12 +85,15 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_3" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
+                  <Text fx:id="word_3" disable="true" nodeOrientation="RIGHT_TO_LEFT" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
                   </Text>
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_2" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: blue; -fx-background-radius: 10;" GridPane.columnIndex="1">
                <columnConstraints>
@@ -100,12 +107,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="4">
                <columnConstraints>
@@ -119,14 +125,13 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_5" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_5" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
-            <GridPane fx:id="word_11" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.rowIndex="2">
+            <GridPane fx:id="word_11" prefHeight="38.0" prefWidth="30.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.rowIndex="2">
                <columnConstraints>
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.20001220703125" minWidth="10.0" prefWidth="45.20001220703125" />
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.40001220703124" minWidth="10.0" prefWidth="133.7999755859375" />
@@ -138,12 +143,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.rowIndex="1">
                <columnConstraints>
@@ -157,12 +161,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_6" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_6" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="46.84613800048828" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_16" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.rowIndex="3">
                <columnConstraints>
@@ -176,12 +179,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_21" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.rowIndex="4">
                <columnConstraints>
@@ -195,12 +197,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <columnConstraints>
@@ -214,12 +215,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_12" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_12" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <columnConstraints>
@@ -233,12 +233,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_7" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_7" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_17" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <columnConstraints>
@@ -252,12 +251,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <columnConstraints>
@@ -271,12 +269,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_22" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_22" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <columnConstraints>
@@ -290,12 +287,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_13" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_13" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_8" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <columnConstraints>
@@ -309,12 +305,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <columnConstraints>
@@ -328,12 +323,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_18" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_18" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_23" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="4">
                <columnConstraints>
@@ -347,12 +341,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: 22;" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <columnConstraints>
@@ -366,12 +359,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_14" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_14" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <columnConstraints>
@@ -385,12 +377,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_9" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_9" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <columnConstraints>
@@ -404,12 +395,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_19" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_19" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_24" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <columnConstraints>
@@ -423,12 +413,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="2">
                <columnConstraints>
@@ -442,12 +431,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_15" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_15" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane fx:id="word_10" prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                <columnConstraints>
@@ -461,12 +449,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                <columnConstraints>
@@ -480,12 +467,11 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_20" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_20" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
             <GridPane prefHeight="38.0" prefWidth="61.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-background-color: #f5e4ab; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="4">
                <columnConstraints>
@@ -499,42 +485,41 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text fx:id="word_25" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                     <font>
-                        <Font size="7.0" />
-                     </font>
-                  </Text>
+                  <Text fx:id="word_25" disable="true" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="Слова" textAlignment="CENTER" wrappingWidth="34.04615020751953" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                </children>
+               <GridPane.margin>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </GridPane.margin>
             </GridPane>
          </children>
       </GridPane>
-      <Text fx:id="remaining_words_blue" layoutX="151.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество слов оставшиеся в синей команде:" textAlignment="CENTER" wrappingWidth="297.24610137939453">
+      <Text fx:id="remaining_words_blue" layoutX="151.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество слов оставшиеся в синей команде:" textAlignment="CENTER" wrappingWidth="297.24610137939453" AnchorPane.bottomAnchor="92.2431640625" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="150.75389862060547">
          <font>
             <Font size="7.0" />
          </font>
       </Text>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fx:id="remaining_words_red" layoutX="151.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество слов оставшиеся в красной команде:" textAlignment="CENTER" wrappingWidth="297.24610137939453">
+      <Text fx:id="remaining_words_red" layoutX="150.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество слов оставшиеся в красной команде:" textAlignment="CENTER" wrappingWidth="297.24610137939453" AnchorPane.bottomAnchor="72.2431640625" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="150.75389862060547">
          <font>
             <Font size="7.0" />
          </font>
       </Text>
-      <Text fx:id="count_black" layoutX="151.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество черных слов: " textAlignment="CENTER" wrappingWidth="297.24610137939453">
+      <Text fx:id="count_black" layoutX="151.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество черных слов: " textAlignment="CENTER" wrappingWidth="297.24610137939453" AnchorPane.bottomAnchor="48.2431640625" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="150.75389862060547">
          <font>
             <Font size="7.0" />
          </font>
       </Text>
-      <Text fx:id="count_white" layoutX="151.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество белых слов:" textAlignment="CENTER" wrappingWidth="297.24610137939453">
+      <Text fx:id="count_white" layoutX="151.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество белых слов:" textAlignment="CENTER" wrappingWidth="297.24610137939453" AnchorPane.bottomAnchor="30.2431640625" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="150.75389862060547">
          <font>
             <Font size="7.0" />
          </font>
       </Text>
-      <Text fx:id="port_and_host" layoutX="151.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Порт игры: 5555. Хост игры: Box111" textAlignment="CENTER" wrappingWidth="297.24610137939453">
+      <Text fx:id="port_and_host" layoutX="150.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Порт игры: 5555. Хост игры: Box111" textAlignment="CENTER" wrappingWidth="297.24610137939453" AnchorPane.bottomAnchor="14.2431640625" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="150.75389862060547">
          <font>
             <Font size="7.0" />
          </font>
       </Text>
-      <TextField fx:id="input_prompt_blue" layoutX="8.0" layoutY="372.0" prefHeight="16.0" prefWidth="110.0">
+      <TextField fx:id="input_prompt_blue" layoutX="8.0" layoutY="370.0" prefHeight="16.0" prefWidth="110.0" AnchorPane.bottomAnchor="10.399999999999977" AnchorPane.leftAnchor="8.0">
          <font>
             <Font size="7.0" />
          </font>
@@ -542,7 +527,7 @@
       <Text layoutX="481.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Загадывает слова у красной команды" wrappingWidth="110.39999999999998" AnchorPane.rightAnchor="8.600000000000023" AnchorPane.topAnchor="4.0" />
       <Text layoutX="8.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Загадывает слова у синей команды" wrappingWidth="110.39999999999998" />
       <Line endX="84.20001983642578" endY="-9.20001220703125" layoutX="42.0" layoutY="48.0" startX="-42.99999237060547" startY="-9.20001220703125" />
-      <Line endX="84.20001220703125" endY="-9.20001220703125" layoutX="515.0" layoutY="48.0" startX="-42.000030517578125" startY="-9.20001220703125" AnchorPane.rightAnchor="0.29998779296875" />
+      <Line endX="84.20001220703125" endY="-9.20001220703125" layoutX="515.0" layoutY="48.0" startX="-40.05635070800781" startY="-9.200023651123047" AnchorPane.rightAnchor="0.0928802490234375" />
       <GridPane fx:id="gamers_in_blue" layoutX="13.0" layoutY="37.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -569,9 +554,9 @@
             <Text fx:id="gamers_in_red" strokeType="OUTSIDE" strokeWidth="0.0" text="Игрок 1" wrappingWidth="108.18865966796875" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <Text fx:id="all_prompt_blue" layoutX="8.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подсказки 2" />
-      <Text fx:id="all_prompt_red" layoutX="481.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подсказки 2" wrappingWidth="110.39999999999986" AnchorPane.rightAnchor="8.600000000000136" />
-      <TextField fx:id="input_prompt_red" layoutX="476.0" layoutY="372.0" prefHeight="16.0" prefWidth="110.0" AnchorPane.bottomAnchor="8.399999999999999" AnchorPane.rightAnchor="13.599999999999994">
+      <Text fx:id="all_prompt_blue" layoutX="14.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подсказки 2" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="14.0" />
+      <Text fx:id="all_prompt_red" layoutX="481.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Подсказки 2" wrappingWidth="110.39999999999986" AnchorPane.bottomAnchor="41.0" AnchorPane.rightAnchor="8.600000000000136" />
+      <TextField fx:id="input_prompt_red" layoutX="481.0" layoutY="371.0" prefHeight="16.0" prefWidth="110.0" AnchorPane.bottomAnchor="9.399999999999977" AnchorPane.rightAnchor="8.600000000000023">
          <font>
             <Font size="7.0" />
          </font>

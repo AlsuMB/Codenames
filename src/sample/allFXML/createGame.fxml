@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="540.0" style="-fx-background-color: #fff9e5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.EnterController">
+   <children>
+      <Pane layoutX="40.0" layoutY="28.0" prefHeight="170.0" prefWidth="476.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="254.0" text="Как вас зовут">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="enter_captain" layoutY="132.0" mnemonicParsing="false" text="Войти как капитан" />
+            <TextField fx:id="enterNameUser" layoutY="37.0" prefHeight="27.0" prefWidth="232.0" promptText="Введите никнейм" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextField fx:id="enterPort" layoutY="87.0" prefHeight="27.0" prefWidth="232.0" promptText="Спросите порт у своего друга" style="-fx-background-color: white; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <Button fx:id="join_game" layoutX="282.0" layoutY="3.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="173.0" text="Присоединится к игре" />
+            <Button fx:id="enter_guessser" layoutX="193.0" layoutY="132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" text="Войти как угадывающий" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
