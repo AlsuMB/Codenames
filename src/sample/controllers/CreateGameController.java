@@ -47,6 +47,7 @@ public class CreateGameController {
                 e.printStackTrace();
             }
             Stage stage = new Stage();
+            stage.setTitle("Codenames");
             stage.setScene(new Scene(loader.getRoot()));
             stage.showAndWait();
         });

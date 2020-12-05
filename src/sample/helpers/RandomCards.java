@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Set;
 
 public class RandomCards {
-    public List give25Cards() {
+    public List<String> give25Cards() {
         WorkWithCSV workWithCSV = new WorkWithCSV();
         List<String> allWords = workWithCSV.giveAllWords("src/sample/templates/words.csv");
         List<Integer> numbers = randomNumbers(allWords.size());
